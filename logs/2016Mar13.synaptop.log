@@ -1,0 +1,153 @@
+synaptop
+{ [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+db.....[object Object]
+app listening on port 6600!
+[0mGET /test.html [36m304 [0m5.748 ms - -[0m
+what....[object Object]
+{ api_key: 'synaptop', transaction_id: '1' }
+{ _id: 56e4738a68c3772ecf787576,
+  transaction_id: 1,
+  user_id: 1,
+  amount: 100,
+  product_id: 1 }
+[0mGET /Transactions?api_key=synaptop&transaction_id=1 [36m304 [0m12.677 ms - -[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m1.489 ms - 27[0m
+[0mGET /test.html [36m304 [0m0.464 ms - -[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m1.531 ms - 27[0m
+what....[object Object]
+1......synaptop
+[0mGET /User/1/Transactions?api_key=synaptop [36m304 [0m4.266 ms - -[0m
+what....[object Object]
+[0mGET / [36m304 [0m1.207 ms - -[0m
+[0mGET /test.html [36m304 [0m0.292 ms - -[0m
+what....[object Object]
+{ api_key: 'synaptop', transaction_id: '1' }
+{ _id: 56e4738a68c3772ecf787576,
+  transaction_id: 1,
+  user_id: 1,
+  amount: 100,
+  product_id: 1 }
+[0mGET /Transactions?api_key=synaptop&transaction_id=1 [36m304 [0m2.115 ms - -[0m
+[0mGET /test.html [32m200 [0m2.178 ms - 3156[0m
+what....[object Object]
+[0mGET /favicon.ico [33m404 [0m10.123 ms - 42[0m
+what....[object Object]
+{ api_key: 'synaptop', transaction_id: '' }
+{ _id: 56e4b92575edd2fe5d821bd8,
+  transaction_id: NaN,
+  user_id: 1,
+  amount: 1,
+  product_id: 1 }
+[0mGET /Transactions?api_key=synaptop&transaction_id= [32m200 [0m2.142 ms - 39[0m
+what....[object Object]
+------------->synaptop
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+api_key:synaptop
+user_id:NaN
+product_id:NaN
+amount:NaN
+max======={"_id":"56e4bcc8121c5c635e64c2f8","transaction_id":4,"user_id":2,"amount":22,"product_id":1}
+current transaction id:5
+{ transaction_id: 5,
+  user_id: NaN,
+  amount: NaN,
+  product_id: NaN,
+  _id: 56e63052232f62905f2cd4e0 }
+[0mPOST /Transactions [32m200 [0m25.212 ms - 62[0m
+what....[object Object]
+------------->synaptop
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+api_key:synaptop
+user_id:NaN
+product_id:NaN
+amount:NaN
+max======={"_id":"56e63052232f62905f2cd4e0","transaction_id":5,"user_id":null,"amount":null,"product_id":null}
+current transaction id:6
+{ transaction_id: 6,
+  user_id: NaN,
+  amount: NaN,
+  product_id: NaN,
+  _id: 56e63054232f62905f2cd4e1 }
+[0mPOST /Transactions [32m200 [0m3.788 ms - 62[0m
+what....[object Object]
+------------->synaptop
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+api_key:synaptop
+user_id:NaN
+product_id:NaN
+amount:NaN
+max======={"_id":"56e63054232f62905f2cd4e1","transaction_id":6,"user_id":null,"amount":null,"product_id":null}
+current transaction id:7
+{ transaction_id: 7,
+  user_id: NaN,
+  amount: NaN,
+  product_id: NaN,
+  _id: 56e63055232f62905f2cd4e2 }
+[0mPOST /Transactions [32m200 [0m4.965 ms - 62[0m
+what....[object Object]
+------------->synaptop
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+api_key:synaptop
+user_id:NaN
+product_id:NaN
+amount:NaN
+max======={"_id":"56e63055232f62905f2cd4e2","transaction_id":7,"user_id":null,"amount":null,"product_id":null}
+current transaction id:8
+{ transaction_id: 8,
+  user_id: NaN,
+  amount: NaN,
+  product_id: NaN,
+  _id: 56e63055232f62905f2cd4e3 }
+[0mPOST /Transactions [32m200 [0m3.973 ms - 62[0m
+what....[object Object]
+------------->synaptop
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+{ api_key: 'synaptop', user_id: '', product_id: '', amount: '' }
+api_key:synaptop
+user_id:NaN
+product_id:NaN
+amount:NaN
+max======={"_id":"56e63055232f62905f2cd4e3","transaction_id":8,"user_id":null,"amount":null,"product_id":null}
+current transaction id:9
+{ transaction_id: 9,
+  user_id: NaN,
+  amount: NaN,
+  product_id: NaN,
+  _id: 56e63056232f62905f2cd4e4 }
+[0mPOST /Transactions [32m200 [0m5.724 ms - 62[0m
+what....[object Object]
+[0mGET /User//Transactions?api_key=synaptop [33m404 [0m2.983 ms - 42[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m0.741 ms - 27[0m
+[0mGET /test.html [32m200 [0m1.074 ms - 3156[0m
+what....[object Object]
+[0mGET /favicon.ico [33m404 [0m0.910 ms - 42[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m2.285 ms - 27[0m
+what....[object Object]
+{ api_key: 'synaptop', transaction_id: '1' }
+{ _id: 56e4738a68c3772ecf787576,
+  transaction_id: 1,
+  user_id: 1,
+  amount: 100,
+  product_id: 1 }
+[0mGET /Transactions?api_key=synaptop&transaction_id=1 [32m200 [0m1.897 ms - 41[0m
+[0mGET /test.html [32m200 [0m0.455 ms - 3156[0m
+what....[object Object]
+[0mGET /favicon.ico [33m404 [0m0.856 ms - 42[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m0.824 ms - 27[0m
+what....[object Object]
+[0mGET /Timestamp?api_key=synaptop [32m200 [0m0.584 ms - 27[0m
+[0mGET /test.html [36m304 [0m0.638 ms - -[0m
+what....[object Object]
+[0mGET /favicon.ico [33m404 [0m0.884 ms - 42[0m
+[0mGET /test.html [36m304 [0m0.646 ms - -[0m
+what....[object Object]
+[0mGET /favicon.ico [33m404 [0m1.140 ms - 42[0m

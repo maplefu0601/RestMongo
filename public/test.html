@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+  
+	<div id='content'></div>
+	<br><br><br>
+    
+    <button onclick='getTimestamp();'>Timestamp</button><br>
+	<label>Transaction id:</label><input id='idTrans'/>
+	<button onclick='getTransaction()'>Get Transaction</button>
+	<br><br><br>
+	
+	<label>user id:</label><input id='userid'/><br>
+	<label>product id:</label><input id='productid'/><br>
+	<label>amount:</label><input id='amount'/>
+	<button onclick='saveTransaction()'>Save Transaction</button><br><br>
+	<button onclick='getUserTransaction()'>Get User Transaction</button>
+
+    <script>
+      
+	  var content = $('#content');
+      function getTimestamp() {
+        try {
+        $.ajax({
+            method: "GET",
+            url: "http://52.37.138.97:6600/Timestamp?api_key=synaptop",
+
+          })
+            .done(function( msg ) {
+              content.html(JSON.stringify(msg));
+            })
+            .fail(function(err) {
+              content.html(JSON.stringify(err));
+            })
+			.always(function() {
+				console.log( "complete" );
+			});
+        } catch(err) {alert(err);}
+      }
+      
+      function getTransaction() {
+        try {
+			var id = $('#idTrans').val();
+			$.ajax({
+				method: "GET",
+				url: "http://52.37.138.97:6600/Transactions?api_key=synaptop&transaction_id="+id,
+
+			  })
+            .done(function( msg ) {
+              content.html(JSON.stringify(msg));
+            })
+            .fail(function(err) {
+              content.html(JSON.stringify(err));
+            })
+			.always(function() {
+				console.log( "complete" );
+			});
+        } catch(err) {alert(err);}
+      }
+	  
+	  
+      function saveTransaction() {
+        try {
+			var userId = $("#userid").val();
+			var productId = $('#productid').val();
+			var amount = $('#amount').val();
+
+        $.ajax({
+            method: "POST",
+            url: "http://52.37.138.97:6600/Transactions",
+            data: { api_key:'synaptop', user_id: userId, product_id:productId, amount:amount }
+          })
+            .done(function( msg ) {
+              content.html(JSON.stringify(msg));
+            })
+            .fail(function(err) {
+              content.html(JSON.stringify(err));
+            })
+			.always(function() {
+				console.log( "complete" );
+			});
+        } catch(err) {alert(err);}
+      }
+	  
+      function getUserTransaction() {
+        try {
+			var id = $('#userid').val();
+        $.ajax({
+            method: "GET",
+            url: "http://52.37.138.97:6600/User/"+id+"/Transactions",
+			data:{api_key:'synaptop'}
+          })
+            .done(function( msg ) {
+              content.html(JSON.stringify(msg));
+            })
+            .fail(function(err) {
+              content.html(JSON.stringify(err));
+            })
+			.always(function() {
+				console.log( "complete" );
+			});
+        } catch(err) {alert(err);}
+      }
+	  
+    </script>
+  </body>
+
+</html>
